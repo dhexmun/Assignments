@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Login Page</title>
+   
+   <link rel="stylesheet" href="style.css">
+   
+   <script> 
+   function myFunction() 
+   { window.location.href="success.html"; } 
+   </script>
+</head>
+<body>
+   <section class="page">
+      <div class="login-page">
+        <div class="form">
+          <form class="login-form" action="success.html">
+            <input type="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Format: Should be a minimum of 8 characters containing at least one number, one lowercase & one uppercase alphabet." required>
+            <input id="button" type="submit" value="login">
+            <p class="message">Not registered? <a href="index.html">Create an account</a></p>
+          </form>
+        </div>
+      </div>
+   </section>
+</body>
+</html>

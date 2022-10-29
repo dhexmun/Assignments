@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Registration Page</title>
+   
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="page">
+    <div class="register-page">
+      <div class="form">
+        <form class="register-form">
+          <input type="text" name="fname" placeholder="First Name" maxlength="12" minlength="3" required>
+          <input type="text" name="lname" placeholder="Last Name" maxlength="12" minlength="3" required>
+          <input type="tel" name="number" placeholder="Phone Number" pattern="[1-9]{3}-[0-9]{10}" title="Format: 234-5678901234" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <select id="gender" required>
+            <option value="gender">Gender</option>
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+          </select>
+          <input type="date" name="dob" placeholder="Date of Birth" max="2023-01-01" min="1993-01-01" required>
+          <input type="color" name="color" placeholder="Favorite Color" required>
+          <input type="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Format: Must be a minimum of 8 characters containing at least one number, one lowercase & one uppercase alphabet." required>
+         
+          <button>create</button>
+          <p class="message">Already registered? <a href="login.html">Sign In</a></p>
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
